@@ -1,17 +1,6 @@
----
-title: Bitcoin Forecast V4
-emoji: "\U0001f4c8"
-colorFrom: red
-colorTo: blue
-sdk: docker
-pinned: false
-license: mit
----
-
 # Bitcoin Forecast V4 — Predicción de Precios con Modelos Fundacionales de Series Temporales
 
-**Autor:** Jorge Luis Herrera Cecilia
-**Versión:** 4.0  
+*Autor:* Jorge Luis Herrera Cecilia  
 **Estado:** Producción  
 **Última actualización:** 18 de Mayo del 2026
 
@@ -178,16 +167,16 @@ Esto abrirá el navegador en `http://localhost:8501` con el panel de control int
 **Pestañas disponibles:**
 | Pestaña | Descripción |
 |---------|-------------|
-| 📈 **Forward** | Predicción N días hacia adelante con bandas P10–P90 |
-| 🔙 **Backtest** | Validación hacia atrás con N días configurables |
-| 🔄 **Combinado** | Historial + backtest + forecast en una vista |
-| 📡 **Tiempo Real** | Monitor en vivo (velas + forecast) con toggle lateral |
+|  **Forward** | Predicción N días hacia adelante con bandas P10–P90 |
+|  **Backtest** | Validación hacia atrás con N días configurables |
+|  **Combinado** | Historial + backtest + forecast en una vista |
+|  **Tiempo Real** | Monitor en vivo (velas + forecast) con toggle lateral |
 
 **Controles laterales:**
 - **Modelo Chronos:** Selector entre Tiny / Small / Base
 - **Forward:** Slider + botones rápidos (1d, 7d, 30d)
 - **Backtest:** Slider de N días hacia atrás
-- **📡 Live 3s:** Activa/desactiva la actualización cada 3 segundos
+- **Live 3s:** Activa/desactiva la actualización cada 3 segundos
 
 ### 5.3 Ejecución por Línea de Comandos
 
