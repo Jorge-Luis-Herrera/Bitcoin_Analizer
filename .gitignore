@@ -1,0 +1,33 @@
+# Cache y datos generados
+cache/
+results/
+
+# Entornos Python
+venv_py310/
+venv/
+.env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+node_modules/
+*.log
+
