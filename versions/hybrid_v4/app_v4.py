@@ -158,7 +158,7 @@ def load_chronos_pipeline(model_name):
     from chronos import ChronosPipeline
     hf_name = MODELS[model_name]
     return ChronosPipeline.from_pretrained(
-        hf_name, device_map="cpu", dtype=torch.float32,
+        hf_name, device="cpu",
     )
 
 
