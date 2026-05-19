@@ -1,3 +1,13 @@
+---
+title: Bitcoin Forecast V4
+emoji: "\U0001f4c8"
+colorFrom: red
+colorTo: blue
+sdk: docker
+pinned: false
+license: mit
+---
+
 # Bitcoin Forecast V4 — Predicción de Precios con Modelos Fundacionales de Series Temporales
 
 **Autor:** Jorge Luis Herrera Cecilia
