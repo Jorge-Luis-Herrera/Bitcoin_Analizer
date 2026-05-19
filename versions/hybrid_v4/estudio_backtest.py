@@ -4,11 +4,9 @@ Evaluates Chronos variants and baseline models across multiple
 independent test windows dating back to 2024.
 """
 
-import os, sys, numpy as np, pandas as pd, yfinance as yf, torch
-import warnings, time, json
+import os, numpy as np, pandas as pd, yfinance as yf, torch
+import warnings, time
 from datetime import datetime, timedelta
-from sklearn.metrics import mean_absolute_percentage_error
-from itertools import product
 
 warnings.filterwarnings('ignore')
 
@@ -233,7 +231,7 @@ def run_study():
             mejora = (naive_mape - row['MAPE']) / naive_mape * 100
             print(f'    {row["Model"]:25s} {mejora:+.1f}%')
 
-    print(f'\n  MAPE BY YEAR (Chronos-Small):')
+    print('\n  MAPE BY YEAR (Chronos-Small):')
     years = {}
     for idx, tp in enumerate(test_points):
         year = price.index[tp].year
@@ -245,7 +243,7 @@ def run_study():
         if vals:
             print(f'    {year}: {np.mean(vals):.2f}% ({len(vals)} samples)')
 
-    print(f'\n  Study complete.\n')
+    print('\n  Study complete.\n')
 
 
 if __name__ == '__main__':

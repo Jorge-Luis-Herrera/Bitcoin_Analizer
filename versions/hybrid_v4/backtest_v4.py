@@ -3,13 +3,11 @@ Backtest V4 — Chronos walk-forward validation.
 Predicts the last N days using only data available before each prediction point.
 """
 
-import os, sys, numpy as np, pandas as pd, yfinance as yf, torch
+import os, numpy as np, pandas as pd, yfinance as yf, torch
 from datetime import datetime, timedelta
-from sklearn.metrics import mean_absolute_percentage_error
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
@@ -115,8 +113,8 @@ def backtest():
     })
     csv_path = os.path.join(RESULTS_DIR, 'backtest_v4.csv')
     results.to_csv(csv_path, index=False)
-    print(f'  CSV: {csv_path}')
-    print(f'\n  Backtest complete.\n')
+    print('  CSV: ' + csv_path)
+    print('\n  Backtest complete.\n')
 
     return overall_mape
 

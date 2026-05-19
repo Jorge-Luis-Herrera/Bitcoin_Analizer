@@ -3,7 +3,7 @@ Forecast V4 — Chronos forward prediction.
 Projects N days ahead using historical price data and displays confidence bands.
 """
 
-import os, sys, numpy as np, pandas as pd, yfinance as yf, torch
+import os, numpy as np, pandas as pd, yfinance as yf, torch
 import requests
 from datetime import datetime, timedelta
 import matplotlib
@@ -164,8 +164,8 @@ def forecast():
     })
     csv_path = os.path.join(RESULTS_DIR, 'forecast_v4.csv')
     results.to_csv(csv_path, index=False)
-    print(f'  CSV: {csv_path}')
-    print(f'\n  Forecast complete.\n')
+    print('  CSV: ' + csv_path)
+    print('\n  Forecast complete.\n')
 
 
 if __name__ == '__main__':

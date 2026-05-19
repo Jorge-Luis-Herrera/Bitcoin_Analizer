@@ -5,8 +5,8 @@ BTC price history, backtest (N-day walk-forward), and forward forecast
 with real-time monitoring. Bilingual EN/ES.
 """
 
-import os, sys, numpy as np, pandas as pd, yfinance as yf, torch
-import requests, pickle, time, threading
+import os, numpy as np, pandas as pd, yfinance as yf, torch
+import requests, threading
 from datetime import datetime, timedelta
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
