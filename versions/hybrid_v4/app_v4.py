@@ -157,9 +157,7 @@ st.markdown("""
 def load_chronos_pipeline(model_name):
     from chronos import ChronosPipeline
     hf_name = MODELS[model_name]
-    return ChronosPipeline.from_pretrained(
-        hf_name, device="cpu",
-    )
+    return ChronosPipeline.from_pretrained(hf_name)
 
 
 @st.cache_data(ttl=600, show_spinner=False)
